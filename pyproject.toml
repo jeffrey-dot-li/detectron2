@@ -6,7 +6,7 @@ authors = ["Jeffrey <jeffrey.dot.li@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.7"
+python = ">=3.9"
 torch = "^2.2.1"
 torchvision = "^0.17.1"
 Pillow = ">=7.1"    # Prefer Pillow over PIL (not a strict requirement)
@@ -27,6 +27,7 @@ packaging = "*"
 dataclasses = "*"
 
 # If you can extract a basic list of optional dependencies:
+opencv-python = "^4.9.0.80"
 [tool.poetry.extras]
 all = ["fairscale", "timm", "scipy", "shapely", "pygments", "psutil", "panopticapi"] 
 dev = ["flake8", "isort", "flake8-bugbear", "flake8-comprehensions", "black"]
